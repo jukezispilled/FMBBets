@@ -18,7 +18,7 @@ function VIPd() {
                 <div className="absolute inset-0 bg-black opacity-40"></div>
                 <div className="z-10 mt-4 mx-4 text-6xl text-white font-custom mb-8 text-center">VIP Day Pass
                     <div className="w-full flex justify-center">
-                        <a href="/checkout" className="bg-gradient-to-r from-amber-700 via-yellow-500 to-amber-700 animate-text text-2xl w-min flex justify-center text-white font-bold py-1 px-3 rounded items-center gap-1">
+                        <a href="/plays" className="bg-gradient-to-r from-amber-700 via-yellow-500 to-amber-700 animate-text text-2xl w-min flex justify-center text-white font-bold py-1 px-3 rounded items-center gap-1">
                             <div className="mt-[1px] text-4xl">
                                 Buy
                             </div>
