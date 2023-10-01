@@ -42,7 +42,7 @@ function Home () {
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className="text-white px-4 pt-1.5 pb-[3px] rounded-xl text-3xl lg:text-4xl font-custom flex w-min whitespace-nowrap bg-gradient-to-r from-amber-700 via-yellow-500 to-amber-700 animate-text font-semibold"
+                  className="text-white px-4 pt-1.5 pb-[3px] rounded-xl text-3xl lg:text-4xl font-custom flex w-min whitespace-nowrap bg-gradient-to-r from-amber-700 via-yellow-500 to-amber-700 animate-text"
                 >
                   Lock In
                 </motion.button>
