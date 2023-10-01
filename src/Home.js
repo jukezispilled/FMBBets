@@ -28,9 +28,9 @@ function Home () {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="-mt-24 text-white text-[76px] lg:text-[120px] leading-none tracking-tight md:-tracking-normal text-center font-extrabold font-custom mx-[10%]"
+              className="-mt-24 text-white text-[76px] lg:text-[120px] leading-none md:-tracking-normal text-center font-custom mx-[10%]"
             >
-              <div className="outline text-center flex items-center mb-4">Bet With the Best</div>
+              <div className="outline text-center flex items-center mb-4 font-bold tracking-tighter">B<span className="tracking-tight inline-block">et</span> With the Best</div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -42,7 +42,7 @@ function Home () {
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className="text-white px-4 pt-1.5 pb-[3px] rounded-xl text-3xl lg:text-4xl font-custom flex w-min whitespace-nowrap bg-gradient-to-r from-amber-700 via-yellow-500 to-amber-700 animate-text font-bold"
+                  className="text-white px-4 pt-1.5 pb-[3px] rounded-xl text-3xl lg:text-4xl font-custom flex w-min whitespace-nowrap bg-gradient-to-r from-amber-700 via-yellow-500 to-amber-700 animate-text font-semibold"
                 >
                   Lock In
                 </motion.button>
