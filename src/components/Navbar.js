@@ -28,6 +28,7 @@ const Navbar = () => {
               <motion.path
                 initial={{ d: 'M6 9l6 6 6-6' }}
                 animate={{ d: isOpen ? 'M6 9l6 6 6-6' : 'M4 6h16M4 12h16m-7 6h7' }}
+                transition={{ duration: 0.25 }}
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
