@@ -28,9 +28,9 @@ function Home () {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="-mt-24 text-white text-[76px] lg:text-[120px] leading-none md:-tracking-normal text-center font-custom mx-[10%]"
+              className="-mt-24 flex justify-center text-white text-[76px] lg:text-[120px] leading-none md:-tracking-normal text-center font-custom mx-[10%]"
             >
-              <div className="outline text-center flex items-center mb-4 font-bold tracking-[-0.04em]">Bet With the Best</div>
+              <div className="outline pl-3 pr-5 text-center flex items-center mb-4 font-bold tracking-[-0.04em]">Bet With the Best</div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: -30 }}
