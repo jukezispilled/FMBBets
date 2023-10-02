@@ -10,7 +10,7 @@ function Home () {
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover"
-          style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/home2.png'})` }}
+          style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/bghome1.png'})` }}
         ></div>
   
         {/* Overlay */}
@@ -28,9 +28,9 @@ function Home () {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="-mt-24 flex justify-center text-white text-[76px] lg:text-[120px] leading-none md:-tracking-normal text-center font-custom mx-[10%]"
+              className="-mt-24 flex justify-center text-white text-[72px] lg:text-[120px] leading-none md:-tracking-normal text-center font-custom mx-[10%]"
             >
-              <div className="outline pl-3 pr-5 text-center flex items-center mb-4">Bet With the Best</div>
+              <div className="pl-3 pr-5 text-center flex items-center mb-4">Wager With Winners</div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -92,7 +92,7 @@ function Home () {
                     </Ticker>
                 </div>
             </div>
-            <div className="relative h-[300px] w-screen bg-gradient-to-r from-amber-700 via-yellow-600 to-amber-700 animate-text">
+            <div className="relative h-[250px] w-screen bg-gradient-to-r from-amber-700 via-yellow-600 to-amber-700 animate-text">
             <div className="absolute inset-0 bg-black opacity-5"></div>
                 <div className="h-full flex justify-center items-center">
                     <div className="z-5 text-white font-custom text-5xl">
