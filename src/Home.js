@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import CountUp from 'react-countup';
 
 function Home () {
-    const images = ['./winner.png'];
+    const images = ['./winners.png'];
 
     return (
         <><div className="relative h-screen w-screen">
