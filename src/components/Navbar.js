@@ -20,21 +20,21 @@ const Navbar = () => {
             FMB
           </a>
         </div>
-
+        
         {/* Mobile menu button */}
         <div className="md:hidden">
-          <button onClick={toggleMenu} type="button" className="text-white focus:outline-none">
+        <button onClick={toggleMenu} type="button" className="text-white focus:outline-none">
             <svg className="w-14 h-14" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <motion.path
+            <motion.path
                 initial={{ d: 'M6 9l6 6 6-6' }}
                 animate={{ d: isOpen ? 'M6 9l6 6 6-6' : 'M4 6h16M4 12h16m-7 6h7' }}
                 transition={{ duration: 0.25 }}
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth="2"
-              ></motion.path>
+            ></motion.path>
             </svg>
-          </button>
+        </button>
         </div>
 
         {/* Desktop menu */}

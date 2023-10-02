@@ -30,7 +30,7 @@ function Home () {
               transition={{ duration: 1, delay: 0.5 }}
               className="-mt-24 flex justify-center text-white text-[72px] lg:text-[120px] leading-none md:-tracking-normal text-center font-custom mx-[10%]"
             >
-              <div className="pl-3 pr-5 text-center flex items-center mb-4">Wager With Winners</div>
+              <div className="pl-3 pr-5 text-center flex items-center mb-3">Wager With Winners</div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -54,19 +54,19 @@ function Home () {
                 <div className="flex items-center text-[30px] leading-none lg:text-[47px] lg:h-[130px] text-slate-800 bg-slate-100 my-5 font-custom">
                     <div className="flex flex-wrap justify-center items-center text-center p-2.5 w-1/3 h-full">
                         <div className="grid">
-                            <CountUp scrollSpyOnce={true} enableScrollSpy={true} end={50000} duration={2.5} suffix="+" separator="," className="inline" />
+                            <CountUp scrollSpyOnce={true} enableScrollSpy={true} end={30000} duration={2.5} suffix="+" separator="," className="inline" />
                             Partners
                         </div>
                     </div>
                     <div className="flex flex-wrap justify-center items-center text-center p-2.5 border-l border-r border-gray-200 w-1/3 h-full">
                         <div className="grid">
-                            <CountUp scrollSpyOnce={true} enableScrollSpy={true} end={5000000} duration={2.5} prefix="$" suffix="+" separator="," className="inline" />
+                            <CountUp scrollSpyOnce={true} enableScrollSpy={true} end={2000000} duration={2.5} prefix="$" suffix="+" separator="," className="inline" />
                             Bet
                         </div>
                     </div>
                     <div className="flex flex-wrap justify-center items-center text-center p-2.5 w-1/3 h-full">
                         <div className="grid">
-                            <CountUp scrollSpyOnce={true} enableScrollSpy={true} end={10000} duration={2.5} suffix="+" separator="," className="inline" />
+                            <CountUp scrollSpyOnce={true} enableScrollSpy={true} end={2500} duration={2.5} suffix="+" separator="," className="inline" />
                             Wins
                         </div>
                     </div>
@@ -74,7 +74,7 @@ function Home () {
             </div><div className="relative h-min w-screen bg-cover" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/blues.jpg'})` }}>
                 <div className="absolute inset-0 bg-black opacity-40"></div>
                 <div className="h-full grid content-center pt-8 pb-10 lg:py-12">
-                    <div className="px-[10%] py-4 lg:py-8 text-[44px] leading-none lg:text-6xl text-[#37c857] font-custom z-10 text-center">Cashing Out on the Regular</div>
+                    <div className="px-[10%] py-4 lg:py-8 text-[44px] leading-none lg:text-6xl text-amber-500 font-custom z-10 text-center">Cashing Out on the Regular</div>
                     <Ticker duration={5}>
                         {images.map((imagePath, index) => (
                             <div
