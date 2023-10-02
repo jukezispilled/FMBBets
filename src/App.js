@@ -20,7 +20,6 @@ function App() {
             <Route path="/faqs" element={<FAQs />} />
             <Route path="/checkout" element={<Checkout />} />
           </Routes>
-        <Footer />
       </div>
     </Router>
   );

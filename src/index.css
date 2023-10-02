@@ -7,24 +7,3 @@
   src: url('/public/BebasNeue-Regular.ttf') format('truetype');
   /* Other font formats (woff, woff2, etc.) could also be added here */
 }
-
-/* In your global CSS file or style tag */
-body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  overflow: hidden;
-}
-
-/* Optionally, you can target specific elements to handle safe areas */
-/* For example, if you have a header that you want to be at the top of the viewport */
-header {
-  margin-top: constant(safe-area-inset-top);
-  margin-top: env(safe-area-inset-top);
-}
-
-/* Similarly, for a footer at the bottom of the viewport */
-footer {
-  margin-bottom: constant(safe-area-inset-bottom);
-  margin-bottom: env(safe-area-inset-bottom);
-}
