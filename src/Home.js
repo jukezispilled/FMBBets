@@ -28,9 +28,9 @@ function Home () {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
-              className="-mt-24 flex justify-center text-white text-[72px] lg:text-[120px] leading-none md:-tracking-normal text-center font-custom mx-[10%]"
+              className="-mt-24 flex justify-center text-white text-[84px] lg:text-[120px] leading-none md:-tracking-normal text-center font-custom mx-[10%]"
             >
-              <div className="pl-3 pr-5 text-center flex items-center mb-3">Wager With Winners</div>
+              <div className="pl-3 pr-5 text-center flex items-center mb-3">Join the Winning Team</div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -42,7 +42,7 @@ function Home () {
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
-                  className="text-white px-4 pt-1.5 pb-[3px] rounded-xl text-3xl lg:text-4xl font-custom flex w-min whitespace-nowrap bg-gradient-to-r from-amber-700 via-yellow-500 to-amber-700 animate-text"
+                  className="text-white px-4 pt-1.5 pb-[3px] rounded-xl text-4xl lg:text-5xl font-custom flex w-min whitespace-nowrap bg-gradient-to-r from-amber-700 via-yellow-500 to-amber-700 animate-text"
                 >
                   Lock In
                 </motion.button>
@@ -96,7 +96,7 @@ function Home () {
             <div className="absolute inset-0 bg-black opacity-5"></div>
                 <div className="h-full flex justify-center items-center">
                     <div className="z-5 text-white font-custom text-5xl">
-                        Join the Crew
+                        Ready to lock
                         <div className="flex justify-center w-full">
                             <a href="/plays" className="z-10 mt-4 text-3xl bg-white px-4 pt-1.5 pb-[3px] rounded-xl whitespace-nowrap w-min text-center text-slate-800">
                                 <button className="">

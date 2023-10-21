@@ -6,15 +6,17 @@ import VIPd from './VIPday';
 import VIPw from './VIPweek';
 import Excd from './Excday';
 import Excw from './Excweek';
+import Excm from './Excmonth';
 
 function Plays() {
   return (
       <Routes>
         <Route exact path="/" element={<PlaysHome />} />
-        <Route path="/vipday" element={<VIPd />} />
-        <Route path="/vipweek" element={<VIPw />} />
+        <Route path="/vipdaypass" element={<VIPd />} />
+        <Route path="/vipweekpass" element={<VIPw />} />
         <Route path="/exclusiveday" element={<Excd />} />
         <Route path="/exclusiveweek" element={<Excw />} />
+        <Route path="/exclusivemonth" element={<Excm />} />
       </Routes>
   );
 }

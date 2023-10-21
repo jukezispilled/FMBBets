@@ -7,6 +7,7 @@ import Home from './Home';
 import Plays from './Plays';
 import FAQs from './FAQs';
 import Checkout from './Checkout';
+import Success from './Success';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <Route path="/plays/*" element={<Plays />} />
             <Route path="/faqs" element={<FAQs />} />
             <Route path="/checkout" element={<Checkout />} />
+            <Route path='/success' element={<Success />} />
           </Routes>
       </div>
     </Router>

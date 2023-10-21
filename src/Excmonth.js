@@ -1,37 +1,19 @@
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 
 function IframeModal({ onClose }) {
-    useEffect(() => {
-        const handleMessage = (event) => {
-          const postData = JSON.stringify(event.data);
-      
-          // Check if the data starts with the specified JSON string and includes the desired source
-          if (postData && postData.includes('{"source":"nftpay"')) {
-            // Perform the redirection to the '/' route
-            window.location.href = '/success';
-          }
-        };
-      
-        window.addEventListener('message', handleMessage);
-      
-        return () => {
-          window.removeEventListener('message', handleMessage);
-        };
-    }, []);      
-
   return (
     <div className="fixed inset-0 flex items-center justify-center">
       <div className="absolute inset-0 bg-black opacity-40"></div>
       <div className="z-50 bg-cover p-8 rounded-lg" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/blues.jpg'})` }}>
         <iframe
-          src="https://sandbox.nftpay.xyz/iframe/iframe_pay/7fa637a0-b3ff-4550-b9ac-adbc6e993b6d?&_tokenId=0&_currency=0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee&_pricePerToken=500000000000000&_allowlistProof={%22proof%22:[%220x0000000000000000000000000000000000000000000000000000000000000000%22],%22quantityLimitPerWallet%22:%220%22,%22pricePerToken%22:%220%22,%22currency%22:%220xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE%22}&_data=0x"
+          src="https://sandbox.nftpay.xyz/iframe/iframe_pay/7fa637a0-b3ff-4550-b9ac-adbc6e993b6d?&_tokenId=0&_currency=0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee&_pricePerToken=0.0005&_allowlistProof=xxxxxxxx&_data=[]"
           width="100%"
           height="550"
           style={{ border: 'none' }}
         />
         <button
           onClick={onClose}
-          className="text-3xl mt-4 bg-amber-600 text-white font-bold py-1 px-3 rounded"
+          className="text-3xl mt-4 bg-gradient-to-r from-amber-700 via-yellow-500 to-amber-700 text-white font-bold py-1 px-3 rounded"
         >
           Close
         </button>
@@ -40,8 +22,8 @@ function IframeModal({ onClose }) {
   );
 }
 
-function VIPd() {
-  const [showIframe, setShowIframe] = React.useState(false);
+function Excm() {
+  const [showIframe, setShowIframe] = useState(false);
 
   const openIframe = () => {
     setShowIframe(true);
@@ -55,12 +37,12 @@ function VIPd() {
     <div className="h-screen bg-zinc-950 overflow-x-clip">
       <div className="h-screen flex flex-col justify-center items-center">
         <div className="text-white font-custom text-4xl mb-4 text-left w-full px-[15%]">
-          <a href="/plays" className="w-min text-xl bg-amber-600 hidden md:flex text-white font-bold py-1.5 px-2 rounded items-center gap-1">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-4 h-4">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
-            </svg>
-            Plays
-          </a>
+            <a href="/plays" className="w-min text-xl bg-amber-600 hidden md:flex text-white font-bold py-1.5 px-2 rounded items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor" className="w-4 h-4">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
+                </svg>
+                Plays
+            </a>
         </div>
         <div className="relative mt-4 h-[300px] w-[290px] rounded-lg bg-cover flex justify-center items-center" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + '/blues.jpg'})` }}>
           <div className="mx-[15%] absolute -left-[14%] -top-[20%]">
@@ -99,4 +81,4 @@ function VIPd() {
   );
 }
 
-export default VIPd;
+export default Excm;

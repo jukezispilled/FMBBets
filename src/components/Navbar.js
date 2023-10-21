@@ -39,7 +39,7 @@ const Navbar = () => {
 
         {/* Desktop menu */}
         <div className="hidden md:flex space-x-4 text-xl lg:text-3xl font-[500] text-white font-custom tracking-wide">
-          <a href="#" className="">
+          <a href="/" className="">
             Home
           </a>
           <a href="/plays" className="">
@@ -54,17 +54,13 @@ const Navbar = () => {
       {/* Mobile menu */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div
+          <div
             key="mobileMenu"
-            initial={{ opacity: 0, height: 0, overflow: 'hidden' }}
-            animate={{ opacity: 1, height: 'auto', overflow: 'visible' }}
-            exit={{ opacity: 0, height: 0, overflow: 'hidden' }}
-            transition={{ duration: 0.3 }}
             className={`md:hidden px-8 pt-3 pb-2 text-xl lg:text-3xl text-white font-custom tracking-wide ${
               isHomePage ? '-mt-4 bg-transparent !important' : 'bg-zinc-950'
             }`}
           >
-            <a href="#" className="block py-1">
+            <a href="/" className="block py-1">
               Home
             </a>
             <a href="/plays" className="block py-1">
@@ -73,7 +69,7 @@ const Navbar = () => {
             <a href="/faqs" className="block py-1">
               FAQs
             </a>
-          </motion.div>
+          </div>
         )}
       </AnimatePresence>
     </nav>
