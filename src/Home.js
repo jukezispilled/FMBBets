@@ -30,7 +30,7 @@ function Home () {
               transition={{ duration: 1, delay: 0.5 }}
               className="-mt-24 flex justify-center text-white text-[84px] lg:text-[120px] leading-none md:-tracking-normal text-center font-custom mx-[10%]"
             >
-              <div className="pl-3 pr-5 text-center flex items-center mb-3">Join the Winning Team</div>
+              <div className="pl-3 pr-5 text-center flex items-center mb-1.5 leading-[.9]">Join the Winning Team</div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: -30 }}
