@@ -1,12 +1,11 @@
-// api/sendEmail.js
+import nodemailer from 'nodemailer';
 
-const nodemailer = require('nodemailer');
+const E_PASS = process.env.EMAIL_PASS;
 
-export default async function handler(req, res) {
-  if (req.method === 'POST') {
-    const { postData } = req.body;
+export default async (req, res) => {
+  try {
 
-    // Configure your SMTP transporter
+    // Create a Nodemailer transporter
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -17,22 +16,20 @@ export default async function handler(req, res) {
 
     // Define the email content
     const mailOptions = {
-      from: 'Vector Contact',
+      from: 'Purchase',
       to: 'jax46500@gmail.com',
-      subject: 'New Post Data',
-      text: `Received post data: ${postData}`,
+      subject: 'Purchase',
+      html: `
+        <p>Name: ${req.body}</p>
+        `,
     };
 
-    try {
-      // Send the email
-      await transporter.sendMail(mailOptions);
-      
-      res.status(200).json({ success: true });
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ error: 'Internal Server Error' });
-    }
-  } else {
-    res.status(405).json({ error: 'Method Not Allowed' });
+    // Send the email
+    await transporter.sendMail(mailOptions);
+
+    res.status(200).json({ message: 'Email sent successfully!' });
+  } catch (error) {
+    console.error('Error sending email:', error);
+    res.status(500).json({ message: 'Failed to send email.' });
   }
-}
+};
