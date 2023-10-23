@@ -33,7 +33,7 @@ function PlaysHome() {
               <div className="absolute inset-0 bg-black opacity-30"></div>
               <div className="grid ">
                 <p className="z-10">{uniqueMessages[index]}</p>
-                <p className="-mt-1 z-10 text-3xl">{uniquePrices[index]}</p>
+                <p className="-mt-1 z-10 text-3xl text-green-400">{uniquePrices[index]}</p>
               </div>
             </a>
           ))}
