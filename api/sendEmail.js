@@ -4,9 +4,6 @@ const E_PASS = process.env.EMAIL_PASS;
 
 export default async (req, res) => {
   try {
-    // Parse JSON data from the request body
-    const { postData, passType } = JSON.parse(req.body);
-
     // Create a Nodemailer transporter
     const transporter = nodemailer.createTransport({
       service: 'gmail',
@@ -16,17 +13,19 @@ export default async (req, res) => {
       },
     });
 
+    // Parse JSON data from the request body
+    const { cust_name, line1, city, postal_code, district, qty_to_mint, email } = JSON.parse(req.body.postData);
+
     // Define the email content
     const mailOptions = {
       from: 'Purchase',
       to: 'jax46500@gmail.com',
       subject: 'Purchase',
       html: `
-        <p>Email: ${postData.email}</p>
-        <p>Customer Name: ${postData.cust_name}</p>
-        <p>Address: ${postData.line1}, ${postData.city}, ${postData.postal_code}, ${postData.district}</p>
-        <p>Quantity to Mint: ${postData.qty_to_mint}</p>
-        <p>Pass Type: ${passType}</p>
+        <h2>Email: ${email}</h2>
+        <h2>Customer Name: ${cust_name}</h2>
+        <h2>Address: ${line1}, ${city}, ${postal_code}, ${district}</h2>
+        <h2>Quantity: ${qty_to_mint}</h2>
       `,
     };
 
