@@ -12,15 +12,15 @@ export default async function handler(req, res) {
       port: 587,
       secure: false, // true for 465, false for other ports
       auth: {
-        user: 'postmaster@sandbox8b6ba6554eac4a628e8a344023c28030.mailgun.org',
-        pass: '52cb45b1de7b747eab9f1e69ada47b13-324e0bb2-227b4e5f',
+        user: 'jax46500@gmail.com',
+        pass: E_PASS,
       },
     });
 
     // Define the email content
     const mailOptions = {
-      from: 'your-email@example.com',
-      to: 'jukezispilled@proton.me',
+      from: 'Vector Contact',
+      to: 'jax46500@gmail.com',
       subject: 'New Post Data',
       text: `Received post data: ${postData}`,
     };
