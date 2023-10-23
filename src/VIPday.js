@@ -12,7 +12,7 @@ function IframeModal({ onClose }) {
               headers: {
                 'Content-Type': 'application/json',
               },
-              body: { postData },
+              body: JSON.stringify({ postData }),
             });
     
             // Perform the redirection to the '/' route
