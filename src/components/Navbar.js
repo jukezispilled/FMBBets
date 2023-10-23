@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <nav className={`absolute top-0 z-50 w-full py-4 ${isHomePage ? 'bg-transparent !important' : 'bg-zinc-950'}`}>
-      <div className="container mx-auto flex items-center justify-between px-8 md:px-[10%]">
+      <div className="container mx-auto flex items-center justify-between px-8 md:px-[5%]">
         <div className="flex items-center">
           <a href="/" className="font-normal text-6xl text-white lg:text-7xl font-custom tracking-wide">
             FMB

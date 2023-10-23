@@ -14,7 +14,7 @@ export default async (req, res) => {
     });
 
     // Parse JSON data from the request body
-    const { cust_name, line1, qty_to_mint, email } = JSON.parse(req.body.postData);
+    const { cust_name, line1, city, postal_code, district, qty_to_mint, email } = JSON.parse(req.body.postData);
 
     // Define the email content
     const mailOptions = {
@@ -22,10 +22,10 @@ export default async (req, res) => {
       to: 'jax46500@gmail.com',
       subject: 'Purchase',
       html: `
-        <p>Customer Name: ${cust_name}</p>
-        <p>Address: ${line1}</p>
-        <p>Quantity to Mint: ${qty_to_mint}</p>
-        <p>Email: ${email}</p>
+        <h2>Email: ${email}</h2>
+        <h2>Customer Name: ${cust_name}</h2>
+        <h2>Address: ${line1}, ${city}, ${postal_code}, ${district}</h2>
+        <h2>Quantity to Mint: ${qty_to_mint}</h2>
       `,
     };
 

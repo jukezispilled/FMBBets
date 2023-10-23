@@ -21,7 +21,7 @@ function PlaysHome() {
 
   return (
     <div className="min-h-screen bg-zinc-950">
-      <div className="min-h-screen flex justify-center items-center">
+      <div className="min-h-screen md:pt-[7%] flex justify-center items-center">
         <div className="flex flex-wrap justify-center text-center px-2 pb-4">
           {[1, 2, 3, 4, 5].map((boxNumber, index) => (
             <a

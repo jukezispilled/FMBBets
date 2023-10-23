@@ -40,8 +40,6 @@ function Home () {
             >
               <a href="/plays">
                 <motion.button
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
                   className="text-white px-4 pt-1.5 pb-[3px] rounded-xl text-4xl lg:text-5xl font-custom flex w-min whitespace-nowrap bg-gradient-to-r from-amber-700 via-yellow-500 to-amber-700 animate-text"
                 >
                   Lock In

@@ -4,7 +4,7 @@ function Success() {
         <div className="h-screen bg-zinc-950">
             <div className="h-screen flex flex-col justify-center items-center">
                 <div className="grid">
-                    <div className="font-custom text-4xl text-white mx-12 text-center">
+                    <div className="font-custom text-4xl text-white mx-12 md:mx-[25%] text-center">
                         Your purchase was successful. Be on the lookout for emails regarding when plays will be sent out.
                     </div>
                     <div className="flex items-center justify-center text-white">

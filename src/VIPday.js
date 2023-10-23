@@ -87,12 +87,12 @@ function VIPd() {
               {showIframe ? (
                 <IframeModal onClose={closeIframe} />
               ) : (
-                <div
+                <button
                   onClick={openIframe}
                   className="bg-gradient-to-r from-amber-700 via-yellow-500 to-amber-700 animate-text text-2xl w-min flex justify-center text-white font-bold py-2 px-4 rounded items-center gap-1"
                 >
                   <div className="mt-[2.5px] text-5xl">Buy</div>
-                </div>
+                </button>
               )}
             </div>
           </div>
