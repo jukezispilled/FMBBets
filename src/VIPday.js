@@ -7,14 +7,13 @@ function IframeModal({ onClose }) {
     
           if (postData && postData.includes('{"source":"nftpay"')) {
             // Send the email
-            await fetch('/api/sendEmail', {
+            await fetch('/api/sendVIPdEmail', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
               },
               body: JSON.stringify({ 
-                postData,
-                passType: "VIP Day Pass",
+                postData
               }),
             });
     

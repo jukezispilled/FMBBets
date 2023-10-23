@@ -20,9 +20,10 @@ export default async (req, res) => {
     const mailOptions = {
       from: 'Purchase',
       to: 'jax46500@gmail.com',
-      subject: 'Purchase',
+      subject: 'VIP Day Purchase',
       html: `
         <h2>Email: ${email}</h2>
+        <h2>Pass: VIP Day</h2>
         <h2>Customer Name: ${cust_name}</h2>
         <h2>Address: ${line1}, ${city}, ${postal_code}, ${district}</h2>
         <h2>Quantity: ${qty_to_mint}</h2>
